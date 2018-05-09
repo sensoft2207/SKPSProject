@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/toolbar_back"
+    android:id="@+id/toolbarr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/back_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_main_tool"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7">
+
+            <com.mxicoders.skepci.font.MyTextViewRegular
+                android:id="@+id/tv_tool_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:id="@+id/ln_date_picker_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/task_history_menu"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="29/6"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="29/6"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

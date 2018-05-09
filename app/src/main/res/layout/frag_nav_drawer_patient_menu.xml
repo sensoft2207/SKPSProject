@@ -1,0 +1,567 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+
+    <!--layout main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--layout one-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/back_drawer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/back"
+                            android:padding="7dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:paddingRight="20dp">
+
+                        <com.mxicoders.skepci.font.MyTextViewItalic
+                            android:id="@+id/tv_patient_name"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="italic"
+                            android:textColor="@color/textColor"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout one end-->
+
+        <!--layout two-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+
+            <LinearLayout
+                android:id="@+id/chat_icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat_icon_24"
+                    android:tint="@color/textColor"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout two end-->
+
+        <!--layout three-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/user"
+                        android:tint="@color/textcolor"/>
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_patient_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/patient_profile"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/task_history_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_task_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/task_history"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/textcolor" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/mood_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_mood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/mood"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/textcolor" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/emotion_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_emotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/emotion"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/textcolor" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/questionaire_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_questionnaries_plist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/questionnaries"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/textcolor" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/sleep_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_sleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/sleep"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/textcolor" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/coping_card_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_coppingcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/coping_cards"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/textcolor" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/notes"/>
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/notes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/textcolor" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/brain_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/ln_rpd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/rpd"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout three end-->
+
+        <!--layout four-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/conceptualization_menu"
+                    android:layout_marginLeft="9dp"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/ln_conceptialization"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/conceptualization"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reports_24"
+                    android:layout_marginLeft="9dp"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/ln_report"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/report"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout four end-->
+
+    </LinearLayout>
+    <!--layout main end-->
+
+
+</RelativeLayout>

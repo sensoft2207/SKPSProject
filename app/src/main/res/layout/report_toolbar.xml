@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/toolbarr">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@drawable/toolbar_back">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/back_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_main_tool"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7">
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/tv_tool_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="95dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:text="@string/report_2"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_popup_add_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add_report"
+                    android:layout_gravity="center"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_pdf_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pdf_two"
+                    android:layout_gravity="center"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

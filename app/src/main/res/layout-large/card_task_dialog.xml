@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="285dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <!--one-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@color/textColor"
+                    android:orientation="vertical">
+
+                    <!--one.one-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="25dp">
+
+                            <com.mxicoders.skepci.font.MyTextviewBold
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/task"
+                                android:gravity="center|left|top"
+                                android:textStyle="normal|bold"
+                                android:textSize="14sp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/edittext_color"/>
+
+                            <com.mxicoders.skepci.font.MyTextViewRegular
+                                android:id="@+id/set_quest"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/cards"
+                                android:gravity="center|left|top"
+                                android:textStyle="normal"
+                                android:paddingLeft="4dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/edittext_color"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--one.one end-->
+
+                    <!--one.two-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+
+                        <com.mxicoders.skepci.font.MyTextviewBold
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/task_schedule_alert"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/edittext_color"/>
+
+                    </LinearLayout>
+                    <!--one.two end-->
+
+
+                </LinearLayout>
+                <!--one end-->
+                <!--two-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#D5E9F8"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/signout_yes_button">
+
+                            <com.mxicoders.skepci.font.MyTextViewRegular
+                                android:id="@+id/tv_schedule_task"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/schedule_task"
+                                android:gravity="center"
+                                android:textColor="@color/textcolor"
+                                android:textAllCaps="true"
+                                android:padding="3dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--two end-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:src="@drawable/close_popup" />
+    </FrameLayout>
+</FrameLayout>

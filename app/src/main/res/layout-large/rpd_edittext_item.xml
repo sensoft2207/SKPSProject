@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mxicoders.skepci.font.MyEdittextItalic
+        android:id="@+id/ed_rpd_evidence_dyna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_back"
+        android:drawableLeft="@drawable/serch"
+        android:drawablePadding="11dp"
+        android:hint="@string/evidence"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:inputType="textCapWords|textCapSentences"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColorHint="@color/edittext_color"
+        android:textStyle="italic" />
+
+</LinearLayout>

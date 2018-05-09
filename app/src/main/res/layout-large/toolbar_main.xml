@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/toolbar_back"
+    android:id="@+id/toolbarr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/back_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_main_tool"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7">
+
+            <com.mxicoders.skepci.font.MyTextViewRegular
+                android:id="@+id/tv_tool_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/img_tool_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/img_tool_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:tint="#4093DA"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

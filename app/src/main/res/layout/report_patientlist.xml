@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarr"
+            layout="@layout/report_toolbar"/>
+
+
+        <!--layout main-->
+        <FrameLayout
+            android:id="@+id/ln_pdf_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <WebView
+                android:id="@+id/wv_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rc_ques_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+                </android.support.v7.widget.RecyclerView>
+
+                <com.mxicoders.skepci.font.MyTextviewBold
+                    android:id="@+id/no_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/ques_no"
+                    android:textStyle="bold"
+                    android:textColor="@color/edittext_color"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:paddingLeft="10dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rc_note_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+                </android.support.v7.widget.RecyclerView>
+
+                <com.mxicoders.skepci.font.MyTextviewBold
+                    android:id="@+id/no_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/note_no"
+                    android:textStyle="bold"
+                    android:textColor="@color/edittext_color"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:paddingLeft="10dp"/>
+
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/gridMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:columnWidth="135dp"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:elevation="20dp"
+                    android:visibility="gone">
+                </GridView>
+
+                <com.mxicoders.skepci.font.MyTextviewBold
+                    android:id="@+id/no_coping"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/coping_card_no"
+                    android:textStyle="bold"
+                    android:textColor="@color/edittext_color"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:paddingLeft="10dp"/>
+
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

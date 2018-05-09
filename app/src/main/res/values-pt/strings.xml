@@ -1,0 +1,438 @@
+<resources>
+    <string name="app_name">Skepsis</string>
+
+    <!--Error-->
+    <string name="ws_error">Ops, aconteceu um erro.</string>
+    <string name="no_internet">Ops, seu dispositivo não está conectado.</string>
+    <string name="invalidate_param">Parâmetros inválidos</string>
+    <string name="article_delete">Artigo Deletado com Sucesso</string>
+    <string name="leap">A data não é válida.</string>
+    <string name="no_internet_alert">Sem conexão com a internet.</string>
+    <string name="please_wait">Por favor, aguarde...</string>
+    <string name="allow_permission">Por favor, de permissões para continuar usando o app</string>
+
+    <!--Question todolist-->
+    <string name="option_select">Selecione ao menos uma opção</string>
+
+
+    <!--Chat Screen-->
+    <string name="enter_message">Digite sua mensagem</string>
+    <string name="chat">Chat</string>
+    <string name="delete_chat">Tem certeza que deseja deletar este chat?</string>
+
+    <!--Login-->
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="sign_up">CADASTRO</string>-->
+    <string name="account">Não tem uma conta?</string>
+    <string name="enter_email">Digite um email válido.</string>
+    <string name="enter_password">Digite uma senha</string>
+    <string name="forgot_pass">Esqueci minha senha</string>
+    <string name="patient_choose">Paciente</string>
+    <string name="psyc_choose">Psicólogo</string>
+    <string name="login">Login</string>
+    <string name="signup_new">Novo usuário? Cadastre-se</string>
+
+
+    <!--forgot password-->
+    <string name="forgot_password">Esqueci minha senha</string>
+    <string name="okay">Ok</string>
+
+    <!--to_do_mood click-->
+    <string name="very_happy">Muito feliz</string>
+    <string name="very_sad">Muito triste</string>
+
+    <!--to_do_questionnaries-->
+    <string name="question">Questão</string>
+    <string name="save_for_later">Próx</string>
+    <string name="no_option">Sem opções</string>
+    <string name="no_question">Sem questões</string>
+    <string name="question_to">Questão</string>
+
+    <!--to_do_rpd-->
+    <string name="a_thougts">Pensamentos Automáticos</string>
+    <string name="evidence">Evidência</string>
+    <string name="c_evidence">Evidência contrária</string>
+    <string name="conclusion">Conclusão</string>
+
+
+    <!--Coping card-->
+    <string name="coping_message">Por favor, digite sua resposta</string>
+    <string name="text">Escolha o quente</string>
+    <string name="coping_cards">Cartões de enfrentamento</string>
+    <string name="create_new">Criar novo</string>
+    <string name="export_all">Exportar tudo</string>
+    <string name="specify_ans">Você pode especificar sua resposta</string>
+    <string name="submit">ENVIAR</string>
+    <string name="c_new">Criar novo</string>
+    <string name="coping_pdf_download">Pdf baixado com sucesso em /sdcard/skepsiscopingcard/</string>
+    <string name="delete_coping">Tem certeza que deseja deletar este cartão?</string>
+
+    <!--patient list pys-->
+    <string name="invite_email">Digite o email do paciente</string>
+    <string name="delete_patient">Declinado com sucesso</string>
+
+    <!--situation-->
+    <string name="situation">Digite a situação</string>
+    <string name="thoughts">Digite os pensamentos</string>
+
+
+    <!--signup phsy-->
+    <string name="naame">Digite seu nome</string>
+    <string name="email_phy">Digite seu email</string>
+    <string name="pass_phy">Digite uma senha</string>
+    <string name="cpass_phy">Confirme a senha digitada</string>
+    <string name="pass_not_match">A senha deve ser a mesma</string>
+    <string name="male_v">Digite sua cidade</string>
+    <string name="date">Escolha a data</string>
+    <string name="lname">Digite o sobrenome</string>
+    <string name="crp">Digite seu CRP</string>
+    <string name="cpf">Digite seu CPF</string>
+    <string name="address">Digite seu endereço</string>
+    <string name="city">Digite seu nome</string>
+    <string name="approach">Digite sua abordagem terapêutica</string>
+    <string name="s_phy_email">Digite o email do psicólogo</string>
+    <string name="s_phy_cemail">O email deve ser o mesmo</string>
+    <string name="are_you_patient">Você é um paciente?</string>
+    <string name="are_you_pyschologist">Você é um psicólogo?</string>
+    <string name="signup_pyschologist">Cadastre-se como Psicólogo</string>
+    <string name="signup_patint_pyschologist">Cadastre-se como Paciente</string>
+    <string name="next">Próx</string>
+    <string name="last_name_initial">Inicial do sobrenome</string>
+    <string name="username">Nome de usuário</string>
+    <string name="confirm_pass">Confirme sua senha</string>
+    <string name="date_of_birth">Data de nascimento</string>
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="city_2">Cidade</string>
+    <string name="link_account">Sim, conecte as contas</string>
+    <string name="pyschologist_email">Email do psicólogo</string>
+    <string name="pyschologist_email_confirm">Confirme o email do psicólogo</string>
+    <string name="tool_dec">Esta é uma ferramenta que auxiliará a compartilhar exercícios com seus pacientes</string>
+    <string name="agree">Eu concordo</string>
+    <string name="crp_no">Número do CRP</string>
+    <string name="cpf_no">Número do CPF</string>
+    <string name="address_2">Endereço</string>
+    <string name="approach_2">Abordagem</string>
+    <string name="ok">OK</string>
+
+
+    <!--Rpd-->
+    <string name="rpd_situatio">Digite a situação</string>
+    <string name="rpd_thoght">Digite o pensamento automático</string>
+    <string name="rpd_evidence">Digite a evidência</string>
+    <string name="rpd_c_evidence">Digite a evidência contrária</string>
+    <string name="rpd_conclusion">Digite a conclusão</string>
+    <string name="rpd_emotion">Escolha a emoção</string>
+    <string name="situation_2">Situação</string>
+    <string name="choose_emotion">Escolha a emoção</string>
+    <string name="evidences">Evidências</string>
+    <string name="counter_evidences">Evidências contrárias</string>
+    <string name="emotion_rpd">Emoção : </string>
+    <string name="choose_the_hot">Escolha o quente</string>
+
+
+    <!--questionnaries create-->
+    <string name="v_title">Digite o título</string>
+    <string name="v_range_from">Digite o valor inicial</string>
+    <string name="v_range_to">Digite o valor final</string>
+    <string name="v_median_from">Digite o valor inicial da mediana</string>
+    <string name="v_median_to">Digite o valor final da mediana</string>
+    <string name="questio_name">Nome do questionário</string>
+    <string name="range">Intervalo</string>
+    <string name="median">Mediana</string>
+    <string name="from">de</string>
+    <string name="to">até</string>
+    <string name="new_que_result">Resultado do novo questionário</string>
+    <string name="ques_category">Categoria do questionário</string>
+    <string name="ques_category_re">Resultado do Questionário</string>
+    <string name="questionnarie_complete">Questionário finalizado</string>
+
+    <!--task history password protected-->
+    <string name="please">POR FAVOR</string>
+    <string name="dec">digite novamente sua senha</string>
+
+    <!--patient invite sent dialog-->
+    <string name="patient">PACIENTE</string>
+    <string name="invitation">Convite</string>
+    <string name="invitation_dec">Um email foi enviado para este paciente</string>
+
+    <!--delete dialog-->
+    <string name="dec_delete">Tem certeza que deseja arquivar esta nota?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <!--schedule task dialog-->
+    <string name="interview">Entrevista</string>
+    <string name="age">Idade</string>
+    <string name="children">Criança</string>
+    <string name="adult">Adulto</string>
+    <string name="parts">Partes</string>
+    <string name="basic_info">Informações básicas</string>
+    <string name="diagnostic">Diagnóstico</string>
+    <string name="social_skill">Habilidades Sociais</string>
+    <string name="s_future_task">Agendar tarefa futura</string>
+
+    <!--task dialog-->
+    <string name="saved">Salvo</string>
+    <string name="saved_dec">A tarefa foi salva</string>
+    <string name="new_task">Nova tarefa</string>
+
+
+    <!--task completed dialog-->
+    <string name="complete">Concluída</string>
+    <string name="complete_dec">Essa tarefa foi concluída</string>
+
+
+    <!--situation dialog-->
+    <string name="situation_3">SITUAÇÃO</string>
+    <string name="situation_3_dec">em que esta emoção apareceu</string>
+    <string name="thoght">Pensamentos</string>
+    <string name="thoght_dec">quando os pensamentos apareceram</string>
+    <string name="choose_type_rep">Escolha o tipo</string>
+
+    <!--signout dialog-->
+    <string name="signout_dec">Tem certeza que deseja sair?</string>
+
+    <!--patient list invite dialog-->
+    <string name="invite_patient">Convide um paciente</string>
+    <string name="invite">Convite</string>
+
+    <!--patient status-->
+    <string name="status_p">Pendendo aprovação</string>
+
+    <!--report-->
+    <string name="report_2">Relatório</string>
+    <string name="choose_type">Escolha o tipo</string>
+    <string name="start_date">Data inicial</string>
+    <string name="end_date">Data final</string>
+    <string name="report_pdf_download">Pdf baixado com sucesso em /sdcard/skepsiscopingcard/</string>
+    <string name="correct_date_validation">Por favor, digite a data correta</string>
+
+
+    <!--article-->
+    <string name="article_title">Digite o título</string>
+    <string name="article_author">Digite o nome do autor</string>
+    <string name="article_body">Digite o texto do artigo</string>
+    <string name="auther">Autor : </string>
+    <string name="auther_2">Autor</string>
+    <string name="check_visible">Deixar disponível a outros psicólogos (sujeito à moderação)</string>
+    <string name="new_article">Novo Artigo</string>
+    <string name="article_list">Lista de Artigos</string>
+    <string name="delete_article">Tem certeza que deseja deletar este artigo?</string>
+    <string name="like_success_msg">Favorito adicionado com sucesso</string>
+    <string name="dislike_success_msg">Favorito removido com sucesso</string>
+    <string name="send_article">Tem certeza que deseja enviar este artigo?</string>
+    <string name="sent_article">Artigo enviado para paciente</string>
+
+    <!--conceptualization-->
+    <string name="one">Dados relevantes da infancia</string>
+    <string name="two">Crenças nucleares</string>
+    <string name="three">Pressupostos / regras</string>
+    <string name="edit_concep">Editar conceitualização</string>
+    <string name="write_concep">Escreva seu artigo aqui </string>
+    <string name="concep_1">Crenças nucleares</string>
+    <string name="concep_2">Pressupostos regras</string>
+    <string name="concep_3">Estrategias infancia</string>
+    <string name="concep_4">Nenhuma conceitualização encontrada</string>
+    <string name="concep_5">Clique no ícone acima para adicionar</string>
+    <string name="coping_card_no">Nenhum cartão de enfrentamento encontrado</string>
+    <string name="note_no">Nenhuma nota encontrada</string>
+    <string name="ques_no">Nenhum questionário encontrado</string>
+    <string name="view_conceptualization">Ver conceitualização</string>
+    <string name="year_old">de idade</string>
+    <string name="patient2">paciente</string>
+    <string name="pdf_download">Pdf baixado com sucesso</string>
+    <string name="edit_condeptualization">Editar conceitualização</string>
+
+    <!--note-->
+    <string name="note_body">Digite sua nota</string>
+    <string name="note">Título</string>
+    <string name="write_note">Escreva sua nota aqui</string>
+    <string name="edit_note">Editar Nota</string>
+    <string name="note_archieved">Notas Arquivadas</string>
+
+    <!--patient_list_invite_dialog string-->
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+
+    <!--signup patient three-->
+    <string name="p_head">Deseja compartilhar todos os seus dados com um psicólogo? </string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_search">Buscar</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+    <string name="datee">Data</string>
+    <string name="Month">Mês</string>
+    <string name="year">Ano</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/title_home</item>
+        <item>@string/title_videos</item>
+        <item>@string/title_coupens</item>
+        <item>@string/title_offers</item>
+
+    </string-array>
+
+
+    <string-array name="nav_drawer_labels1">
+        <item>@string/title_home</item>
+        <item>@string/title_videos</item>
+        <item>@string/title_coupens</item>
+        <item>@string/title_offers</item>
+
+    </string-array>
+
+
+    <string-array name="state">
+        <item>State</item>
+        <item>Gujarat</item>
+        <item>Mumbai</item>
+        <item>Punjab</item>
+    </string-array>
+
+
+    <string name="title_home">Perfil</string>
+    <string name="title_videos">Lista de Pacientes</string>
+    <string name="title_coupens">Artigos</string>
+    <string name="title_offers">Questionários</string>
+    <string name="invitee">O paciente receberá um email com um convite e instruções de como baixar o aplicativo, e compartilhar os dados com você</string>
+    <string name="log_cre">Email ou senha inválidos</string>
+    <string name="invalid_pass">Senha inválida</string>
+
+    <!--demo string-->
+    <string name="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mollis nisi. Sed sed scelerisque lectus, nec varius urna. Vestibulum sapien risus, finibus non ex id, fermentum maximus dui. Maecenas mollis varius bibendum. Curabitur in laoreet ipsum. Proin non vehicula justo. Sed consequat leo non libero eleifend tincidunt.
+    </string>
+
+    <!--Help psychologist-->
+    <string name="psy_help">FAQ - Psicólogos</string>
+    <string name="psy_help_des">Questões relacionadas aos psicólogos</string>
+    <string name="patient_help">FAQ - Pacientes</string>
+    <string name="patient_help_des">Questões relacionadas aos pacientes</string>
+
+    <!--card_task_dialog-->
+    <string name="task">Tarefa</string>
+    <string name="cards">Cartões</string>
+    <string name="task_schedule_alert">Tem certeza que deseja agendar esta tarefa?</string>
+    <string name="schedule_task">agendar tarefa</string>
+
+    <!--change password-->
+    <string name="change_password">Modificar senha</string>
+    <string name="old_password">Senha antiga</string>
+    <string name="new_password">Nova senha</string>
+    <string name="confirm_password_2">Confirme a nova senha</string>
+    <string name="change">Modificar</string>
+    <string name="cancle">Cancelar</string>
+
+    <!--change password validation-->
+    <string name="enter_old_pass">Por favor, digite sua senha antiga</string>
+    <string name="enter_new_pass">Por favor, digite sua nova senha</string>
+    <string name="enter_confirm_new_pass">Por favor, confirme sua nova senha</string>
+    <string name="pass_not_match2">Sua senha nova e confirmação devem ser iguais</string>
+
+    <!--edit profile-->
+    <string name="name">Nome</string>
+    <string name="edit_profile">Editar Perfil</string>
+
+    <!--emotions-->
+    <string name="emotion">Emoções</string>
+    <string name="schedule">Agendar</string>
+    <string name="onece">Uma vez</string>
+    <string name="daily">Diariamente</string>
+    <string name="x_day">3x dia</string>
+    <string name="emotion_level">Intensidade da emoção</string>
+    <string name="primary_emotion">Emoções primárias</string>
+    <string name="primary_secondary_emotion">Emoções secundárias</string>
+    <string name="terciary">Emoções terciárias</string>
+    <string name="use_intensity">Usar intensidade</string>
+    <string name="use_situation">Usar situação</string>
+    <string name="use_thought">Usar pensamentos</string>
+    <string name="schedule_task_2">agendar tarefa</string>
+
+    <!--patientlist_menu-->
+    <string name="patient_profile">Perfil do paciente</string>
+    <string name="task_history">Histórico de tarefas</string>
+    <string name="mood">Humor</string>
+    <string name="emotion_2">Emoções</string>
+    <string name="sleep">Sono</string>
+    <string name="coping_card">Cartões de enfrentamento</string>
+    <string name="notes">Notas</string>
+    <string name="rpd">"R.P.D.</string>
+    <string name="rpd2">R.P.D</string>
+    <string name="rpd3">RPD</string>
+    <string name="conceptualization">Conceitualização</string>
+    <string name="questionnaries">Questionário</string>
+    <string name="report">Relatórios</string>
+    <string name="choose_date">Escolha a data</string>
+    <string name="archieve_patient">Tem certeza que deseja arquivar este paciente?</string>
+    <string name="dele_patient">Tem certeza que deseja exluir esta solicitação?</string>
+    <string name="que_one">Questionário 1</string>
+
+    <!--create note-->
+    <string name="create_note">Criar notas</string>
+
+    <!--Emotion type-->
+    <string name="happy">Alegria</string>
+    <string name="love">Amor</string>
+    <string name="Sad">Tristeza</string>
+    <string name="Fear">Medo</string>
+    <string name="Disgusted">Nojo</string>
+    <string name="Calm">Calma</string>
+    <string name="saudades">Saudades</string>
+    <string name="Proud">Orgulho</string>
+    <string name="Hopefull">Esperança</string>
+    <string name="Enthusiatic">Entusiasmo</string>
+    <string name="Bored">Tédio</string>
+    <string name="Ashamed">Vergonha</string>
+    <string name="Lonely">Solidão</string>
+    <string name="Dissapointed">Desapontamento</string>
+    <string name="Confused">Confusão</string>
+    <string name="Worried">Preocupação</string>
+    <string name="Mistrust">Desconfiança</string>
+    <string name="Guilty">Culpa</string>
+    <string name="Anxious">Ansiedade</string>
+    <string name="Angry">Raiva</string>
+    <string name="Despair">Desespero</string>
+
+    <!--patient_menu-->
+    <string name="profile">Perfil</string>
+    <string name="article_2">Artigos</string>
+    <string name="todo_list">Tarefas à fazer</string>
+    <string name="help">Ajuda</string>
+    <string name="sign_out">Sair</string>
+
+    <!--pyschologist menu-->
+    <string name="patient_list">Lista de Pacientes</string>
+    <string name="patient_archieve">Pacientes Arquivados</string>
+
+    <!--help-->
+    <string name="search">Buscar</string>
+    <string name="faq">FAQ</string>
+
+    <!--task history patient-->
+    <string name="last_week">SEMANA PASSADA</string>
+    <string name="this_week">ESTA SEMANA</string>
+    <string name="s">S</string>
+    <string name="m">T</string>
+    <string name="t">Q</string>
+    <string name="w">Q</string>
+    <string name="f">S</string>
+
+    <!--patient to do list-->
+    <string name="yesterday">Ontem - à fazer</string>
+    <string name="today">Hoje</string>
+    <string name="anytime">A qualquer momento</string>
+
+    <!--intensity dialog-->
+    <string name="intensity">intensidade</string>
+    <string name="of_emotion">da emoção</string>
+
+</resources>

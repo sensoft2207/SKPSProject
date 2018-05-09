@@ -1,0 +1,186 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="380dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <!--one-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:paddingBottom="25dp"
+                    android:background="@drawable/login_linear_shape_top"
+                    android:orientation="vertical">
+
+                    <!--one.one-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:paddingTop="5dp"
+                            android:orientation="vertical">
+
+                            <com.mxicoders.skepci.font.MyTextViewItalic
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/invite_patient"
+                                android:padding="3dp"
+                                android:textStyle="italic"
+                                android:textColor="@color/edittext_color"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--one.one end-->
+
+                    <!--one.two-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <com.mxicoders.skepci.font.MyEdittextItalic
+                                android:id="@+id/ed_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_back"
+                                android:drawableLeft="@drawable/email"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/email"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColorHint="@color/edittext_color"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--one.two end-->
+
+                    <!--one.three-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="14"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:paddingTop="10dp"
+                            android:orientation="vertical">
+
+
+                            <com.mxicoders.skepci.font.MyTextViewItalic
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/invitee"
+                                android:padding="3dp"
+                                android:textStyle="italic"
+                                android:textColor="@color/edittext_color"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                    <!--one.three end-->
+
+                </LinearLayout>
+                <!--one end-->
+                <!--two-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_linear_shap_bottom"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/login_button_back">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:id="@+id/tv_invite_click"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/invite"
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:textAllCaps="true"
+                            android:padding="3dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--two end-->
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:src="@drawable/close_popup" />
+    </FrameLayout>
+    </FrameLayout>

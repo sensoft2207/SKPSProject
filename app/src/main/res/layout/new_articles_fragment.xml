@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbarr"
+            layout="@layout/toolbar_main"/>
+
+    </LinearLayout>
+
+    <!--layout main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--layout one-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <com.mxicoders.skepci.font.MyEdittextItalic
+                    android:id="@+id/ed_Article_title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/note"
+                    android:textStyle="italic"
+                    android:textColorHint="@color/edittext_color"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="11dp"
+                    android:paddingLeft="5dp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/edittext_back"/>
+
+                <com.mxicoders.skepci.font.MyEdittextItalic
+                    android:id="@+id/ed_Article_Author"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/auther_2"
+                    android:inputType="textCapSentences"
+                    android:textStyle="italic"
+                    android:textColorHint="@color/edittext_color"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/edittext_back"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:paddingRight="70dp">
+
+
+                        <Spinner
+                            android:id="@+id/sp_category_article"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:background="@drawable/edittext_back"
+                            android:spinnerMode="dialog">
+
+                        </Spinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/dropdown" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout one end-->
+
+        <!--layout two-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="2dp"
+                    android:background="#E6E6E6">
+
+                    <LinearLayout
+                        android:id="@+id/ln_bold"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bold_icon"
+                        android:orientation="vertical">
+
+                       <!-- <TextView
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:gravity="center"
+                            android:textColor="@color/blackk"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:padding="1dp"/>-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_italic"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/italic_icon"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="vertical">
+
+                        <!--<TextView
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="I"
+                            android:gravity="center"
+                            android:textColor="@color/blackk"
+                            android:textAllCaps="true"
+                            android:textStyle="italic"
+                            android:padding="1dp"/>-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--<EditText
+                        android:id="@+id/ed_article_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_back"
+                        android:gravity="top"
+                        android:hint="Write your article here "
+                        android:inputType="textCapSentences"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColorHint="@color/edittext_color"
+                        android:textStyle="italic"
+                        android:paddingLeft="3dp"/>-->
+
+                    <com.mxicoders.skepci.font.MyEdittextItalic
+                        android:id="@+id/ed_article_body"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:inputType="textMultiLine"
+                        android:background="@drawable/edittext_back"
+                        android:hint="@string/write_concep"
+                        android:lines="8"
+                        android:minLines="5"
+                        android:gravity="top|left"
+                        android:maxLines="15"
+                        android:scrollbars="vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColorHint="@color/edittext_color"
+                        android:textStyle="italic"
+                        android:paddingLeft="3dp"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <!--layout two end-->
+
+        <!--layout three-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/ch_article_visibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_visible"
+                    android:textSize="10sp"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/checkbox_selector" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--layout three end-->
+
+        <!--layout four-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center|top"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:paddingTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/login_button_back">
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/tv_article_signup"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/submit"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:textAllCaps="true"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout four end-->
+
+
+    </LinearLayout>
+    <!--layout main end-->
+    </LinearLayout>
+
+</RelativeLayout>

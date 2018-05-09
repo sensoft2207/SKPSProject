@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mxicoders.skepci">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan|adjustResize"
+        android:configChanges="locale|orientation">
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService"><intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter></service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter><action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter></service><!-- ./Firebase Notifications -->
+
+
+        <!--<activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name=".activity.ActivityLoginScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivitySignUpPsychologist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityMenuPsychologist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityRegisterChoose"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivitySignupPhyschologistTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivitySignupPhyschologistThree"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivitySignupPatient"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityMenuPatientList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivitySignupPatientTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivitySignupPatientThree"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityMenuPatient"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityPatientList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotesPatientMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ArticlesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewArticlesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ArticlesTwoClickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ViewArticlePsychologistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionariesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewQuestiResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PatientQuestionnariesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionnariesPatientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionariesTwoClickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivityChat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SleepPatientlistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotesPsychologistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreateNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PatientArchievedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TaskHisPatientMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ToDoQuestionnarClickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ToDoMoodClickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ToDoSleepClickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ToDoEmotionClickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ToDoRpdClickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PatientArticleMenuFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TodoPatientMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HelpPatientMenuActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="false"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.PatientArticleClickMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfilePatientActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ActivityPatientChatList"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TaskHistoryPatientListMenu"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ArticleSleepPatientList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.SendArticleListSleep"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ToDoSleepClickTwo"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.CopindCardPatientList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.RpdPatientListMenu"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.RpdPatientListClickMenu"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ConceptualizationViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.TaskHistoryPatientList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.EditConceptualization"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".DemoDynamicActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WebviewMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.HelpPsychologistMenu"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.NotesArchivedActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.EditProfilePatientPsychologistSide"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WebviewSleep"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.WebViewMood"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.ReportPatientList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.QuestionnariesPatientListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.QuesPatientListTwoClick"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.QuesPatientListThreeClick"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.QuesPatientListFourClick"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

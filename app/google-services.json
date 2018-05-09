@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "889860620662",
+    "firebase_url": "https://skepsis-ee9d2.firebaseio.com",
+    "project_id": "skepsis-ee9d2",
+    "storage_bucket": "skepsis-ee9d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889860620662:android:6852673dd6019e15",
+        "android_client_info": {
+          "package_name": "com.mxicoders.skepci"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889860620662-sfva336ks8260efl36aijihgpholgvi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsR48R0oTRX96pZ2_s4TgLgCY6BvkDJ98"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

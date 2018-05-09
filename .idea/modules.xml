@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ScrollTable/ScrollTable.iml" filepath="$PROJECT_DIR$/ScrollTable/ScrollTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Skepsis.iml" filepath="$PROJECT_DIR$/Skepsis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itemtouchhelperextension/itemtouchhelperextension.iml" filepath="$PROJECT_DIR$/itemtouchhelperextension/itemtouchhelperextension.iml" />
+    </modules>
+  </component>
+</project>

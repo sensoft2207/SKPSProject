@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_main"/>
+
+        </LinearLayout>
+
+
+
+    <!--layout main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <!--layout one-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|bold"
+                android:textColor="#3E92DA"
+                android:gravity="center|right"
+                android:paddingRight="20dp"/>
+
+        </LinearLayout>
+        <!--layout one end-->
+
+        <!--layout two-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.mxicoders.skepci.VerticalSeekBar
+                        android:id="@+id/seekBar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:thumb="@drawable/seek"
+                        android:minHeight="3dip"
+                        android:maxHeight="3dip"
+                        android:thumbOffset="8dp"
+                        android:layout_gravity="center"
+                        android:progressDrawable="@drawable/seekbarr"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:id="@+id/max_seek"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="+10"
+                                        android:gravity="center|right"
+                                        android:textColor="#3E92DA"
+                                        android:paddingRight="30dp"
+                                        android:paddingBottom="30dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="+5"
+                                        android:gravity="center|right"
+                                        android:textColor="#3E92DA"
+                                        android:paddingRight="30dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="0"
+                                        android:textColor="#3E92DA"
+                                        android:gravity="center|right"
+                                        android:paddingRight="30dp"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="-5"
+                                        android:textColor="#3E92DA"
+                                        android:gravity="center|right"
+                                        android:paddingRight="30dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="-10"
+                                        android:textColor="#3E92DA"
+                                        android:gravity="center|right"
+                                        android:paddingRight="30dp"
+                                        android:paddingTop="35dp"/>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/very_happy"
+                                        android:gravity="center|left"
+                                        android:textColor="#3E92DA"
+                                        android:textStyle="italic"
+                                        android:paddingLeft="20dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/very_sad"
+                                        android:gravity="center|left"
+                                        android:textColor="#3E92DA"
+                                        android:textStyle="italic"
+                                        android:paddingLeft="20dp"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout two end-->
+
+        <!--layout three-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/login_button_back">
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/tv_mood_submit"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/submit"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:textAllCaps="true"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout three end-->
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

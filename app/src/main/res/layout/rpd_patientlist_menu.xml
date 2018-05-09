@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_main"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/prevMonth"
+                    android:layout_width="20sp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:src="@drawable/down_arrow"
+                    android:tint="@color/colorPrimary">
+                </ImageView>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/currentMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorPrimary" >
+                </com.mxicoders.skepci.font.MyTextViewRegular>
+
+                <ImageView
+                    android:id="@+id/nextMonth"
+                    android:layout_width="20sp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10sp"
+                    android:src="@drawable/up_arrow"
+                    android:tint="@color/colorPrimary">
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/s" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/m"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/t"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/w"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/t"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/f"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/s"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="#ffffff">
+
+                    <GridView
+                        android:id="@+id/calendar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="7" >
+                    </GridView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#D2E6F6"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+                    <!--layout one-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2">
+
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rc_one"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--layout one end-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

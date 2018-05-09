@@ -1,0 +1,397 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+
+    <!--layout main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <!--layout one-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/back_close_drawer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/back"
+                            android:padding="7dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:paddingRight="20dp">
+
+                        <com.mxicoders.skepci.font.MyTextViewItalic
+                            android:id="@+id/patient_name"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="italic"
+                            android:textColor="@color/textColor"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout one end-->
+
+        <!--layout two-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+
+            <LinearLayout
+                android:id="@+id/chat_icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat_icon_24"
+                    android:tint="@color/textColor"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/tv_chat"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout two end-->
+
+        <!--layout three-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingBottom="70dp">
+
+
+            <LinearLayout
+                android:id="@+id/ln_patient_profile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/user"
+                        android:tint="@color/textcolor"/>
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="@string/profile"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_patient_history"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/task_history_menu" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="@string/task_history"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_patient_article"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/reports_24" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="@string/article_2"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_patient_notes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/notes" />
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="@string/notes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textColor"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/ln_patient_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:src="@drawable/change_pass"
+                    android:tint="@color/textcolor"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="@string/change_password"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/textColor"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+        <!--layout three end-->
+
+        <!--layout four-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/ln_patient_todo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/todo_menu"
+                    android:layout_marginLeft="9dp"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/todo_list"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textColor"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_patient_help"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/help_24"
+                    android:layout_marginLeft="9dp"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/help"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textColor"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_patient_logout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/signout_icon_24"
+                    android:layout_marginLeft="9dp"/>
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/sign_out"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textColor"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout four end-->
+
+    </LinearLayout>
+    <!--layout main end-->
+
+
+</RelativeLayout>

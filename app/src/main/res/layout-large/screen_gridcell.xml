@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_grid_select"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:background="@drawable/date_cell_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ln_main_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.mxicoders.skepci.font.MyTextViewRegular
+                android:id="@+id/calendar_day_gridcell"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="22"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" >
+            </com.mxicoders.skepci.font.MyTextViewRegular>
+
+        </LinearLayout>
+
+
+
+        <com.mxicoders.skepci.font.MyTextViewRegular
+            android:id="@+id/num_events_per_day"
+            style="@style/calendar_event_style"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_gravity="right" >
+        </com.mxicoders.skepci.font.MyTextViewRegular>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

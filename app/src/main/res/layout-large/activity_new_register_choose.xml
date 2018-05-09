@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    tools:context="com.mxicoders.skepci.activity.ActivityLoginScreen">
+
+
+    <!--layout main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--layout one-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+
+            <!--one-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="70dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"/>
+
+            </LinearLayout>
+            <!--one end-->
+
+        </LinearLayout>
+        <!--layout one end-->
+
+        <!--layout two-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="250dp">
+
+
+            <!--one-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/login_linear_shape_top"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewItalic
+                            android:id="@+id/tv_r_choose_patient"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/are_you_patient"
+                            android:textStyle="italic"
+                            android:gravity="bottom|left"
+                            android:textColor="@color/edittext_color"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/ln_signup_patient"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <com.mxicoders.skepci.font.MyTextViewRegular
+                                android:id="@+id/tv_signup_patient"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/signup_patint_pyschologist"
+                                android:gravity="center"
+                                android:textColor="@color/textcolor"
+                                android:textAllCaps="true"
+                                android:padding="3dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <com.mxicoders.skepci.font.MyTextViewItalic
+                            android:id="@+id/tv_r_choose_psychologist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/are_you_pyschologist"
+                            android:textStyle="italic"
+                            android:gravity="bottom|left"
+                            android:textColor="@color/edittext_color"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/ln_signup_pschologist"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <com.mxicoders.skepci.font.MyTextViewRegular
+                                android:id="@+id/tv_signup_phsychologist"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/signup_pyschologist"
+                                android:gravity="center"
+                                android:textColor="@color/textcolor"
+                                android:textAllCaps="true"
+                                android:padding="3dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--one end-->
+
+
+            <!--two-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_linear_shap_bottom"
+                android:paddingLeft="30dp"
+                android:gravity="center"
+                android:paddingRight="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/login_button_back">
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/tv_next_choose"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/next"
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:textAllCaps="true"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout two end-->
+
+    </LinearLayout>
+    <!--layout main end-->
+
+</RelativeLayout>

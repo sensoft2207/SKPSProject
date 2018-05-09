@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbarr"
+            layout="@layout/toolbar_main"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+
+        <LinearLayout
+            android:id="@+id/ln_help_psycho"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/toolbar_back"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <com.mxicoders.skepci.font.MyTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/psy_help"
+                android:paddingLeft="45dp"/>
+
+            <com.mxicoders.skepci.font.MyTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/psy_help_des"
+                android:textSize="12sp"
+                android:textColor="#CCCCCC"
+                android:paddingLeft="45dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_help_patient"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/toolbar_back"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <com.mxicoders.skepci.font.MyTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_help"
+                android:paddingLeft="45dp"/>
+
+            <com.mxicoders.skepci.font.MyTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_help_des"
+                android:textSize="12sp"
+                android:textColor="#CCCCCC"
+                android:paddingLeft="45dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

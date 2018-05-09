@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbarr"
+            layout="@layout/toolbar_main"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp">
+
+        <!--layout main-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="@drawable/login_linear_shape_top"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mxicoders.skepci.font.MyTextViewItalic
+                        android:id="@+id/tv_lastname_head_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_name_initial"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="italic"
+                        android:paddingTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+
+                            <com.mxicoders.skepci.font.MyEdittextItalic
+                                android:id="@+id/ed_patient_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_back"
+                                android:drawableLeft="@drawable/user"
+                                android:drawablePadding="11dp"
+                                android:hint="@string/name"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColorHint="@color/edittext_color"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_back">
+
+                                <com.mxicoders.skepci.font.MyEdittextItalic
+                                    android:id="@+id/ed_patient_last_name_initial"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/edittext_back"
+                                    android:hint=""
+                                    android:paddingTop="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:maxLength="1"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColorHint="@color/edittext_color"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:paddingRight="10dp">
+
+                            <com.mxicoders.skepci.font.MyEdittextItalic
+                                android:id="@+id/ed_patient_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edittext_back"
+                                android:drawableLeft="@drawable/location"
+                                android:drawablePadding="11dp"
+                                android:hint="@string/city_2"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColorHint="@color/edittext_color"
+                                android:textStyle="italic" />
+
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <Spinner
+                                android:id="@+id/sp_patient_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_back"
+                                android:spinnerMode="dropdown">
+
+                            </Spinner>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/dropdown" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <com.mxicoders.skepci.font.MyTextViewItalic
+                        android:id="@+id/tv_dob_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/date_of_birth"
+                        android:textColor="@color/edittext_color"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingRight="10dp">
+
+
+                            <Spinner
+                                android:id="@+id/sp_patient_day"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_back"
+                                android:spinnerMode="dialog">
+
+                            </Spinner>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/dropdown" />
+
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <Spinner
+                                android:id="@+id/sp_patient_month"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_back"
+                                android:spinnerMode="dialog">
+
+                            </Spinner>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/dropdown" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="10dp">
+
+                            <Spinner
+                                android:id="@+id/sp_patient_uear"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_back"
+                                android:spinnerMode="dialog">
+
+                            </Spinner>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/dropdown" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <LinearLayout
+                                android:id="@+id/ln_patient_male"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/male_female_back"
+                                android:paddingRight="10dp">
+
+                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                    android:id="@+id/tv_patient_male"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/male"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/textcolor" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/ln_patient_female"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/male_female_back_two">
+
+                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                    android:id="@+id/tv_patient_female"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/female"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/textcolor" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/login_button_back">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:id="@+id/tv_submit_patient_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="@string/submit"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/textcolor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--layout main end-->
+
+
+    </ScrollView>
+
+
+</LinearLayout>

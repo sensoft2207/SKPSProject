@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="2dp"
+                        android:background="#66ACE2"
+                        android:orientation="vertical">
+
+                        <com.mxicoders.skepci.font.MyTextviewBold
+                            android:id="@+id/tv_date_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:textColor="@color/textColor"/>
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:id="@+id/tv_day_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THU"
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:textColor="@color/textColor"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_item_click"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:paddingTop="2dp"
+                        android:orientation="vertical">
+
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:id="@+id/text_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="173"
+                            android:gravity="center|left"
+                            android:textColor="@color/textColor"
+                            android:paddingLeft="7dp"/>
+
+                        <!--<TextView
+                            android:id="@+id/text_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="173"
+                            android:paddingLeft="7dp"/>-->
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#D2E6F6"
+                />
+
+
+        </LinearLayout>
+
+</LinearLayout>

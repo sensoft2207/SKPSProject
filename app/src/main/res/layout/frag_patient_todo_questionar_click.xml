@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3E92DA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_main"/>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--layout main-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+                <!--layout one-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.mxicoders.skepci.font.MyTextviewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/question"
+                                        android:textStyle="italic|bold"
+                                        android:textColor="@color/textColor"
+                                        android:gravity="center"/>
+
+                                    <com.mxicoders.skepci.font.MyTextviewBold
+                                        android:id="@+id/tv_total_question_count"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="0 / 0"
+                                        android:textStyle="italic|bold"
+                                        android:textColor="@color/textColor"
+                                        android:gravity="center"/>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="5">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="1"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingTop="5dp"/>
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:id="@+id/tv_op_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/no_option"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingLeft="5dp"
+                                                    android:paddingTop="5dp"/>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="2"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingTop="5dp"/>
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:id="@+id/tv_op_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/no_option"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingLeft="5dp"/>
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="3"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingTop="5dp"/>
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:id="@+id/tv_op_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/no_option"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingLeft="5dp"/>
+
+                                                </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="4"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingTop="5dp"/>
+
+                                                <com.mxicoders.skepci.font.MyTextViewRegular
+                                                    android:id="@+id/tv_op_4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/no_option"
+                                                    android:textStyle="italic|bold"
+                                                    android:textColor="@color/textColor"
+                                                    android:gravity="center|left"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingLeft="5dp"/>
+
+                                                </LinearLayout>
+
+
+
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="20dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2E6F6"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--layout one end-->
+
+                <!--layout two-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center"
+                             android:paddingTop="20dp">
+
+                             <TextView
+                                 android:id="@+id/tv_question"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:text="I feel down hearted and blue"
+                                 android:textStyle="italic|bold"
+                                 android:textColor="@color/textColor"
+                                 android:gravity="center"/>
+
+                         </LinearLayout>-->
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:paddingTop="12dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.mxicoders.skepci.font.MyTextViewRegular
+                                        android:id="@+id/tv_question"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/no_question"
+                                        android:textColor="@color/textcolor"
+                                        android:textStyle="italic|bold"
+                                        android:textSize="14sp"
+                                        android:gravity="center"
+                                        android:paddingLeft="12dp"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rpd_one"
+                                    android:tint="@color/textColor"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rpd_two"
+                                    android:tint="@color/textColor"/>
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="20dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2E6F6"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--layout two end-->
+
+                <!--layout three-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ln_option_select_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <!--<android.support.v7.widget.RecyclerView
+                            android:id="@+id/rc_question_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>-->
+
+                        <LinearLayout
+                            android:id="@+id/ln_op_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <com.mxicoders.skepci.font.MyTextViewItalic
+                                android:id="@+id/tv_ans_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="1"
+                                android:textStyle="italic|bold"
+                                android:textColor="@color/textcolor"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:background="@color/textcolor"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_op_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <com.mxicoders.skepci.font.MyTextViewItalic
+                                android:id="@+id/tv_ans_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="2"
+                                android:textStyle="italic|bold"
+                                android:textColor="@color/textcolor"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:background="@color/textcolor"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_op_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <com.mxicoders.skepci.font.MyTextViewItalic
+                                android:id="@+id/tv_ans_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="3"
+                                android:textStyle="italic|bold"
+                                android:textColor="@color/textcolor"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:background="@color/textcolor"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_op_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <com.mxicoders.skepci.font.MyTextViewItalic
+                                android:id="@+id/tv_ans_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="4"
+                                android:textStyle="italic|bold"
+                                android:textColor="@color/textcolor"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--layout three end-->
+
+                <!--layout four-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/login_button_back">
+
+                        <com.mxicoders.skepci.font.MyTextViewRegular
+                            android:id="@+id/tv_task_save"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/save_for_later"
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:textAllCaps="true"
+                            android:padding="3dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--layout four end-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</LinearLayout>

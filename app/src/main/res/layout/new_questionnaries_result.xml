@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_main"/>
+
+        </LinearLayout>
+
+
+    <!--layout main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--layout one-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.mxicoders.skepci.font.MyEdittextItalic
+                    android:id="@+id/ed_que_title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/questio_name"
+                    android:textStyle="italic"
+                    android:singleLine="true"
+                    android:textColorHint="@color/edittext_color"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ques_name"
+                    android:drawablePadding="11dp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/edittext_back"/>
+
+                <!--<EditText
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Category"
+                    android:textStyle="italic"
+                    android:textColorHint="@color/edittext_color"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_back"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:paddingRight="60dp">
+
+
+                        <Spinner
+                            android:id="@+id/sp_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:background="@drawable/edittext_back"
+                            android:spinnerMode="dialog"
+                            android:paddingLeft="30dp">
+
+                        </Spinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:paddingLeft="5dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/catego_brain" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <!--layout one end-->
+
+        <!--layout two-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp">
+
+                <com.mxicoders.skepci.font.MyTextViewItalic
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/range"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/edittext_color"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="2"
+                    android:gravity="center|left">
+
+                    <com.mxicoders.skepci.font.MyTextViewItalic
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/from"
+                        android:textColor="@color/edittext_color"
+                        android:textStyle="italic" />
+
+                    <com.mxicoders.skepci.font.MyEdittextItalic
+                        android:id="@+id/ed_range_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_back"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColorHint="@color/edittext_color"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="15dp">
+
+                    <com.mxicoders.skepci.font.MyTextViewItalic
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to"
+                        android:textStyle="italic"
+                        android:textColor="@color/edittext_color"
+                        android:layout_marginTop="5dp"/>
+
+                    <com.mxicoders.skepci.font.MyEdittextItalic
+                        android:id="@+id/ed_range_to"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textColorHint="@color/edittext_color"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="45dp"
+                        android:background="@drawable/edittext_back"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <!--layout two end-->
+
+        <!--layout three-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp">
+
+                <com.mxicoders.skepci.font.MyTextViewItalic
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/median"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/edittext_color"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="25dp">
+
+                    <com.mxicoders.skepci.font.MyTextViewItalic
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/from"
+                        android:textColor="@color/edittext_color"
+                        android:textStyle="italic" />
+
+                    <com.mxicoders.skepci.font.MyEdittextItalic
+                        android:id="@+id/ed_median_from"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textColorHint="@color/edittext_color"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edittext_back"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="15dp">
+
+                    <com.mxicoders.skepci.font.MyTextViewItalic
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to"
+                        android:textStyle="italic"
+                        android:textColor="@color/edittext_color"
+                        android:layout_marginTop="5dp"/>
+
+                    <com.mxicoders.skepci.font.MyEdittextItalic
+                        android:id="@+id/ed_median_to"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textColorHint="@color/edittext_color"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="45dp"
+                        android:background="@drawable/edittext_back"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <!--layout three end-->
+
+        <!--layout four-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/login_button_back">
+
+                <com.mxicoders.skepci.font.MyTextViewRegular
+                    android:id="@+id/tv_que_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/submit"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/textcolor" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--layout four end-->
+
+
+        </LinearLayout>
+    <!--layout main end-->
+
+    </LinearLayout>
+</RelativeLayout>

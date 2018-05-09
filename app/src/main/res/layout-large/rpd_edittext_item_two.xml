@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ln_rpd_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:gravity="center|left">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_rpd_auto_thoght_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_back"
+                    android:drawableLeft="@drawable/brain"
+                    android:drawablePadding="11dp"
+                    android:hint="@string/a_thougts"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColorHint="@color/edittext_color"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_rd_rpd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_rpd_hot_dyna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rd_hot_one_dyna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

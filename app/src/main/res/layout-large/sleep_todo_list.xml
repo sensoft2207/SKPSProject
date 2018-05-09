@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_main" />
+
+        </LinearLayout>
+
+
+        <!--layout main-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <!--layout one-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <com.mxicoders.skepci.font.MyTextviewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="10h"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <!--layout one end-->
+
+            <!--layout two-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <include
+                            android:id="@+id/toolbarr"
+                            layout="@layout/demo_sleep_table"/>
+
+                        <!--<GridView
+                            android:id="@+id/gridTable"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:columnWidth="130dp"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="columnWidth">
+                        </GridView>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <!--layout two end-->
+
+            <!--layout three-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/login_button_back">
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/tv_save_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/submit"
+                        android:textAllCaps="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textcolor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--layout three end-->
+
+
+        </LinearLayout>
+        <!--layout main end-->
+
+    </LinearLayout>
+</LinearLayout>

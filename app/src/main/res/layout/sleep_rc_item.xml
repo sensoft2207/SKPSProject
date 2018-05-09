@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="2dp"
+                    android:background="#60A8E1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/Imageee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/date_new_task"
+
+                        android:paddingLeft="5dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:paddingTop="2dp"
+                    android:orientation="vertical">
+
+
+                    <com.mxicoders.skepci.font.MyTextViewRegular
+                        android:id="@+id/text_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="173"
+                        android:gravity="center|left"
+                        android:textColor="@color/textcolor"
+                        android:paddingLeft="7dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D2E6F6"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

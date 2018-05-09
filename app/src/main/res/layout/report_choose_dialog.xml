@@ -1,0 +1,269 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <!--one-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/textColor"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp">
+
+                        <com.mxicoders.skepci.font.MyTextviewBold
+                            android:id="@+id/tv_report"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/report_2"
+                            android:gravity="center|left|top"
+                            android:textStyle="normal|bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/edittext_color"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--one-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/textColor"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <com.mxicoders.skepci.font.MyTextviewBold
+                                android:id="@+id/tv_date"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/choose_type"
+                                android:gravity="center|left|top"
+                                android:textStyle="normal"
+                                android:textAllCaps="false"
+                                android:textColor="@color/edittext_color"/>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="15dp">
+
+
+                            <Spinner
+                                android:id="@+id/sp_type_report"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edittext_back"
+                                android:spinnerMode="dialog">
+
+                            </Spinner>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="3dp"
+                                android:paddingTop="5dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/dropdown" />
+
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|top"
+                            android:paddingBottom="20dp">
+
+                            <LinearLayout
+                                android:id="@+id/ln_start_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:paddingRight="25dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/date_icon_24"
+                                        android:tint="@color/colorPrimaryDark"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_start_date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/start_date"
+                                        android:textColor="@color/colorPrimary"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/ln_end_date"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent">
+
+                               <LinearLayout
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="match_parent"
+                                   android:gravity="center">
+
+                                   <ImageView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:src="@drawable/date_icon_24"
+                                       android:tint="@color/colorPrimaryDark"/>
+
+                               </LinearLayout>
+
+                               <LinearLayout
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical"
+                                   android:gravity="center"
+                                   android:paddingLeft="10dp">
+
+                                   <TextView
+                                       android:id="@+id/tv_end_date"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="@string/end_date"
+                                       android:textColor="@color/colorPrimary"/>
+
+                               </LinearLayout>
+
+                           </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--one end-->
+                <!--two-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#D5E9F8"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/signout_yes_button">
+
+                            <com.mxicoders.skepci.font.MyTextViewRegular
+                                android:id="@+id/tv_submit_int_dialog"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/submit"
+                                android:gravity="center"
+                                android:textColor="@color/textcolor"
+                                android:textAllCaps="true"
+                                android:padding="3dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--two end-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:src="@drawable/close_popup" />
+    </FrameLayout>
+</LinearLayout>

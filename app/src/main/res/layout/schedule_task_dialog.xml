@@ -1,0 +1,342 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <!--one-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@color/textColor"
+                    android:orientation="vertical">
+
+                    <!--one.one-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp">
+
+                            <com.mxicoders.skepci.font.MyTextviewBold
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/task"
+                                android:gravity="center|left|top"
+                                android:textStyle="normal|bold"
+                                android:textSize="14sp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/edittext_color"/>
+
+                            <com.mxicoders.skepci.font.MyTextViewRegular
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/interview"
+                                android:gravity="top|left"
+                                android:textStyle="normal"
+                                android:paddingLeft="4dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/edittext_color"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--one.one end-->
+
+                    <!--one.two-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+
+                        <com.mxicoders.skepci.font.MyTextviewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/age"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/edittext_color"
+                            android:gravity="right"
+                            android:paddingRight="48dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp">
+
+                            <RadioGroup
+                                android:id="@+id/rb_age"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/rb_children"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/children"
+                                    android:textColor="@color/dialog_text"
+                                    android:textStyle="normal"
+                                    android:textSize="14sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:paddingTop="6dp"
+                                    android:scaleX="0.75"
+                                    android:gravity="right"/>
+
+                                <RadioButton
+                                    android:id="@+id/rb_adults"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textSize="14sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:scaleX="0.75"
+                                    android:text="@string/adult"
+                                    android:paddingTop="6dp"
+                                    android:textColor="@color/dialog_text"
+                                    android:textStyle="normal" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--one.two end-->
+
+                    <!--one.three-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <com.mxicoders.skepci.font.MyTextviewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/parts"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/edittext_color"
+                            android:gravity="right"
+                            android:paddingRight="48dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp">
+
+                            <RadioGroup
+                                android:id="@+id/rb_part"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/rb_primary_emotion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textSize="14sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:scaleX="0.75"
+                                    android:text="@string/primary_emotion"
+                                    android:paddingTop="6dp"
+                                    android:textColor="@color/dialog_text"
+                                    android:textStyle="normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_primary_seco_emotion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textSize="14sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:scaleX="0.75"
+                                    android:text="@string/primary_secondary_emotion"
+                                    android:paddingTop="6dp"
+                                    android:textColor="@color/dialog_text"
+                                    android:textStyle="normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_terory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:textSize="14sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:scaleX="0.75"
+                                    android:text="@string/terciary"
+                                    android:paddingTop="6dp"
+                                    android:textColor="@color/dialog_text"
+                                    android:textStyle="normal" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <!--one.three end-->
+
+                    <!--one.four-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:orientation="vertical">
+
+
+                                <CheckBox
+                                    android:id="@+id/chk_one"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/basic_info"
+                                    android:textColor="@color/edittext_color"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:scaleX="0.75"
+                                    android:paddingTop="6dp"
+                                    android:gravity="right"/>
+
+                                <CheckBox
+                                    android:id="@+id/chk_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/diagnostic"
+                                    android:textColor="@color/edittext_color"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:scaleX="0.75"
+                                    android:paddingTop="6dp"
+                                    android:gravity="right"/>
+
+                                <CheckBox
+                                    android:id="@+id/chk_three"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/social_skill"
+                                    android:textColor="@color/edittext_color"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:layoutDirection="rtl"
+                                    android:drawablePadding="10dp"
+                                    android:scaleY="0.75"
+                                    android:scaleX="0.75"
+                                    android:paddingTop="6dp"
+                                    android:gravity="right"/>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--one.four end-->
+
+                </LinearLayout>
+                <!--one end-->
+                <!--two-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:background="#D5E9F8"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/signout_yes_button">
+
+                            <com.mxicoders.skepci.font.MyTextViewRegular
+                                android:id="@+id/tv_submit_dialog"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/schedule_task"
+                                android:gravity="center"
+                                android:textColor="@color/textcolor"
+                                android:textAllCaps="true"
+                                android:padding="3dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--two end-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:src="@drawable/close_popup" />
+    </FrameLayout>
+</FrameLayout>
